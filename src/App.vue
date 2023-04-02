@@ -2,7 +2,7 @@
 import HelloWorld from './components/HelloWorld.vue'
 </script>
 
-<template>
+<!-- <template>
   <div>
     <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
@@ -12,7 +12,21 @@ import HelloWorld from './components/HelloWorld.vue'
     </a>
   </div>
   <HelloWorld msg="Vite + Vue" />
+</template> -->
+
+<template>
+  <ul>
+    <li>
+      <router-link :to="{ path: '/'}">HOME</router-link>
+    </li>
+    <li>
+      <router-link :to="{ name: 'About'}">About</router-link>
+    </li>
+  </ul>
+  <router-view></router-view>
 </template>
+
+<scrpt></scrpt>
 
 <style scoped>
 .logo {
