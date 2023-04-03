@@ -2,6 +2,7 @@
   <Header />
   <Navbar />
   <div class="max-w-1200 mx-auto">
+    <Carousel />
     <div class="flex flex-wrap max-w-1200 mx-auto">
       <div class="w-full ">
         <div class="bg-gray-300 h-32"></div>
@@ -125,12 +126,14 @@
 import Header from '/src/layouts/Header.vue';
 import Footer from '/src/layouts/Footer.vue';
 import Navbar from '/src/layouts/Navbar.vue';
+import Carousel from '/src/components/Carousel.vue';
 
 export default {
   components: {
     Header,
     Footer,
     Navbar,
+    Carousel,
   }
 }
 
